@@ -5,12 +5,16 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "whoa"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Active-Recordy API to the Google Website Optimizer API (WO)}
+    gem.description = %Q{Basic CRUD actions through an AR-style interface. Start/Stop experiments, get tracking snippets, add pages, etc.}
     gem.email = "lrichmond@customink.com"
     gem.homepage = "http://github.com/richmolj/whoa"
     gem.authors = ["richmolj@gmail.com"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    
+    gem.add_dependency "happymapper", ">= 0.3.0"
+    gem.add_dependency "rest-client", ">= 1.4.2"
+    gem.add_dependency "active_support", ">= 2.3.0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
