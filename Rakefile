@@ -14,7 +14,6 @@ begin
     
     gem.add_dependency "happymapper", ">= 0.3.0"
     gem.add_dependency "rest-client", ">= 1.4.2"
-    gem.add_dependency "active_support", ">= 2.3.0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
