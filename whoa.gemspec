@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{whoa}
-  s.version = "0.8.0"
+  s.version = "0.9.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["richmolj@gmail.com"]
@@ -53,18 +53,15 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
       s.add_runtime_dependency(%q<happymapper>, [">= 0.3.0"])
       s.add_runtime_dependency(%q<rest-client>, [">= 1.4.2"])
-      s.add_runtime_dependency(%q<active_support>, [">= 2.3.0"])
     else
       s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
       s.add_dependency(%q<happymapper>, [">= 0.3.0"])
       s.add_dependency(%q<rest-client>, [">= 1.4.2"])
-      s.add_dependency(%q<active_support>, [">= 2.3.0"])
     end
   else
     s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     s.add_dependency(%q<happymapper>, [">= 0.3.0"])
     s.add_dependency(%q<rest-client>, [">= 1.4.2"])
-    s.add_dependency(%q<active_support>, [">= 2.3.0"])
   end
 end
 
