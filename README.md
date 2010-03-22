@@ -17,7 +17,10 @@ Authentication
 --------------
   
     > Whoa.email = 'xxxxx'
+    
     > Whoa.password = 'xxxxx'
+    
+    > Whoa.account_id = 'xxxxx'
     
     Uses ClientLogin. OAuth coming soon.
     
@@ -33,7 +36,9 @@ Basic actions
     or
     
     > Whoa::Experiment.new
+    
     > Whoa::Experiment.title = "My New Experiment"
+    
     > Whoa::Experiment.save
     
     Update
@@ -43,7 +48,9 @@ Basic actions
     Read
     
     > Whoa::Experiment.all(:status => "Running")
+    
     > Whoa::Experiment.first(:title => "Foo")
+    
     > Whoa::Experiment.find(123456)
     
   If you're wondering what you can get/set, take a look at the WO API docs. You also have the handy #attributes method.
@@ -60,7 +67,9 @@ Experiments
 Some handy shortcuts:
 
   > @experiment.copy!
+  
   > @experiment.start!
+  
   > @experiment.stop!
   
 Each experiment has #tracking\_script, #control\_script and #conversion_script. You'll need to inject this code into your pages somehow to get experiments working. 
@@ -73,12 +82,13 @@ Pages
   Experiments have many pages; each page belongs to an experiment.
   
   > @experiment.pages.first
+  
   > @experiment.create_page(:title => "foo", :content => "bar") 
   
 Requirements
 ------------
   
-  * rest-client 0.4.2
+  * rest-client >= 0.4.2
   * happymapper >= 0.3.0
   * active_support >= 2.2.0
   
